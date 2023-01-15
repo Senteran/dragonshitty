@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            font-family: 'Verdana';
+        }
+        #dragonshity{
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        .center{
+            display: block;
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            list-style: none;
+        }
+        #Goals{
+            font-size: 30px;
+            font-weight: 450;
+        }
+        hr{
+            width: 70%;
+            border-color: black;
+            background-color: black;
+            height: 4px;
+            border-radius: 10px;
+        }
+        #create{
+            display: block;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 22px;
+        }
+        #ul1{
+            list-style: none;
+        }
+        form{
+            border-style: solid;
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+        }
+        label{
+            text-align: left;
+            
+        }
+        progress{
+            margin-top: 1px;
+            margin-bottom: 1px;
+            margin-right: 25px;
+            margin-left: 1px;
+            width: 85%;
+            float: right;
+        }
+        .tasknr{
+            width: 35px;
+            margin-left: 10px;
+            margin-right: 4px;
+        }
+        .slider{
+            width: 150px;
+            margin-left: 10px;
+        }
+        li{
+            margin-top: 5px;
+        }
+        .copyright{
+            font-size: 10px;
+            margin-left: 20px;
+            position: fixed;
+            bottom: 0;
+        }
+        #logout{
+            position: fixed;
+            bottom: 850px;
+            width: 100px;
+            height: 20px;
+            left: 1750px;
+        }
+    
+    </style>
+</head>
+    <body>
+        <header>
+            <img src="DragonShity.png" alt="" class="center" id="dragonshity">
+        </header>
+        
+        <p class="center" id="Goals">Goals</p>
+        <hr>
+        <button type="button" id="create"><a href="goal-create.html">Create Goal</a></button>
+    
+        <form>
+            <ul id="ul1">
+                <li>
+                    <label><a href="modify-goal.html">Goal one</a></label><progress value="30" max="100"></progress>
+                </li>
+                <li>
+                    <label><a href="modify-goal.html">Goal two</a></label><progress value="100" max="100"></progress>
+                </li>
+                <li>
+                    <label><a href="modify-goal.html">Goal three</a></label><progress value="10" max="100"></progress>
+                </li>
+                <li>
+                    <ul id="tasks">
+                        <li>
+                            <label>Task one</label><input type="number" class="tasknr">
+                            <span>/ Target</span>
+                        </li>
+                        <li>
+                            <label>Task two</label><input type="checkbox" id="switch">
+                        </li>
+                        <li>
+                            <label>Task three</label><input type="text" class="tasknr">
+                            <span>/ Target</span>
+                        </li>
+                        <li>
+                            <label>Task three</label><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </form>
+
+        <button type="button" id="logout"><a href="index.html">Log Out</a></button>
+        
+        <p class="copyright">Copyright Leeghwaterstraat 244b-c INC. 2023-2789. All rights reserved.</p>
+        
+    </body>
+</html>
